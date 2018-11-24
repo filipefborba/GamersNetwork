@@ -42,11 +42,14 @@ def get_players_infos(MATCH, players, team, dictionary):
             info_dict = {
                 "link": None,
                 "infos": None,
+                "level": None
             }
-            infos = p.find_elements_by_tag_name("td")
-            link = p.find_element_by_tag_name("a")
+            
+            infos = p.find_elements_by_tag_name("td") #Todas as infos, kills, deaths, etc
+            link = p.find_element_by_tag_name("a") #Link para o perfil
             player_link = link.get_attribute("href")
-            player_id = player_link.rsplit('/', 1)[-1]
+            player_id = player_link.rsplit('/', 1)[-1] #id que esta no link do perfil
+
             info_dict["link"] = player_link
             for i in infos: #for info in player
                 if (i.text):
@@ -79,7 +82,7 @@ def main():
     sleep(SLEEP_TIME)
     SLEEP_TIME = 1
 
-    for i in range(100):
+    for i in range(5000):
         browser.get('https://gamersclub.com.br/lobby/partida/' + str(MATCH))
         sleep(SLEEP_TIME)
 
@@ -87,7 +90,9 @@ def main():
 
         table_rows = match_info.find_elements_by_tag_name("tr")
 
+        #A partida teve um complete ou outros problemas
         if (len(table_rows) > 12):
+            print("Partida com problemas (complete ou outros)")
             MATCH += 1
         else:
             try:
