@@ -1,0 +1,161 @@
+{
+    "46339": {
+        "matches": {
+            "1267454": {
+                "map": "de_train",
+                "winner": "team_a",
+                "team_b_score": 3,
+                "team_a_score": 16,
+                "team_a": {
+                    "303204": {
+                        "nick": "Harvy 0",
+                        "death": "9",
+                        "kill": "14",
+                        "clutchs": "1",
+                        "kdd": "+ 5",
+                        "adr": "70.1",
+                        "fk": "1",
+                        "rating": 0.29,
+                        "kdr": "1.5556",
+                        "points": "33"
+                    },
+                    "126194": {
+                        "nick": "#lino1 0",
+                        "death": "7",
+                        "kill": "20",
+                        "clutchs": "0",
+                        "kdd": "+ 13",
+                        "adr": "101.6",
+                        "fk": "3",
+                        "rating": 1.1255,
+                        "kdr": "2.8571",
+                        "points": "52"
+                    },
+                    "158839": {
+                        "nick": "GmMister\n\u2014",
+                        "death": "10",
+                        "kill": "17",
+                        "clutchs": "0",
+                        "kdd": "+ 7",
+                        "adr": "92.0",
+                        "fk": "4",
+                        "rating": 0.29,
+                        "kdr": "1.7000",
+                        "points": "37"
+                    },
+                    "224067": {
+                        "nick": "Dr.Jovem\n9",
+                        "death": "8",
+                        "kill": "12",
+                        "clutchs": "0",
+                        "kdd": "+ 4",
+                        "adr": "77.8",
+                        "fk": "2",
+                        "rating": 0.0,
+                        "kdr": "1.5000",
+                        "points": "34"
+                    },
+                    "351709": {
+                        "nick": "-PaRaNoYd.?\n\u2014",
+                        "death": "7",
+                        "kill": "27",
+                        "clutchs": "0",
+                        "kdd": "+ 20",
+                        "adr": "143.0",
+                        "fk": "6",
+                        "rating": 1.1255,
+                        "kdr": "3.8571",
+                        "points": "61"
+                    }
+                },
+                "team_b": {
+                    "46339": {
+                        "nick": "blind brother 0",
+                        "death": "18",
+                        "kill": "8",
+                        "clutchs": "0",
+                        "kdd": "-10",
+                        "adr": "60.8",
+                        "fk": "1",
+                        "rating": 0.0,
+                        "kdr": "0.4444",
+                        "points": "17"
+                    },
+                    "374535": {
+                        "nick": "kRuns 13",
+                        "death": "16",
+                        "kill": "15",
+                        "clutchs": "2",
+                        "kdd": "-1",
+                        "adr": "77.7",
+                        "fk": "0",
+                        "rating": 0.29,
+                        "kdr": "0.9375",
+                        "points": "36"
+                    },
+                    "262025": {
+                        "nick": "2 cubin de gelo\n\u2014",
+                        "death": "19",
+                        "kill": "7",
+                        "clutchs": "0",
+                        "kdd": "-12",
+                        "adr": "42.1",
+                        "fk": "0",
+                        "rating": 0.0,
+                        "kdr": "0.3684",
+                        "points": "17"
+                    },
+                    "363255": {
+                        "nick": "hipex 0",
+                        "death": "18",
+                        "kill": "9",
+                        "clutchs": "0",
+                        "kdd": "-9",
+                        "adr": "56.9",
+                        "fk": "1",
+                        "rating": 0.0,
+                        "kdr": "0.5000",
+                        "points": "26"
+                    },
+                    "306645": {
+                        "nick": "Sampley de guitarra\n\u2014",
+                        "death": "18",
+                        "kill": "2",
+                        "clutchs": "0",
+                        "kdd": "-16",
+                        "adr": "16.4",
+                        "fk": "1",
+                        "rating": 0.0,
+                        "kdr": "0.1111",
+                        "points": "6"
+                    }
+                },
+                "duration": "27 Minutos"
+            }
+        },
+        "player_info": {
+            "nick": "blind brother",
+            "subscription": null,
+            "reputation": "100",
+            "level": 0
+        },
+        "friends": [
+            "107631",
+            "225571",
+            "262027",
+            "375003",
+            "59855",
+            "44224",
+            "19251",
+            "27379",
+            "38938",
+            "8935"
+        ],
+        "played_with": {
+            "374535": 1,
+            "262025": 1,
+            "363255": 1,
+            "306645": 1
+        }
+    }
+}

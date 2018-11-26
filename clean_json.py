@@ -69,9 +69,9 @@ for player in players:
                                                                             }})
             except:
                 print("An exception occurred with match {} and user {}".format(match, player_b))
-        #break
+        break
     data[player]["played_with"] = Counter([x for x in played_with if x != player])
-    #break
+    break
 
-with open('clean_data.json', 'w') as fp:
+with open('test_clean_data.json', 'w') as fp:
     json.dump(data, fp)

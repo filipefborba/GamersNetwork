@@ -1,5 +1,5 @@
-# Calculadora de HLTV rating não oficial
-# Créditos: http://www.mruy.de/csgo/hltv-rating/
+# Calculadora de HLTV rating nao oficial
+# Creditos: http://www.mruy.de/csgo/hltv-rating/
 
 AVERAGE_KPR = 0.679
 AVERAGE_SPR = 0.317
