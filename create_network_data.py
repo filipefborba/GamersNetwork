@@ -11,7 +11,7 @@ def create_player(player_id, current_team, name):
                                 "current_team": current_team,
                                 "name": name,
                                 "mean_rating" : 0,
-                                "mean_rating_campeonato" : 0,
+                                "mean_rating_campeonato" : {},
                                 "maps_played" : 0,
                                 "ratings" : [],
                                 "ratings_campeonato": [],
@@ -62,7 +62,7 @@ for p in players:
         else:
             camp_ratings[tup[0]] += tup[1]
     for camp in camp_ratings:
-        camp_ratings[camp] = camp_ratings[camp]/count[camp]
+        camp_ratings[camp] = round(camp_ratings[camp]/count[camp], 3)
     players[p]["mean_rating_campeonato"] = camp_ratings
 
 with open('network_cleaned_data.json', 'w') as fp:
