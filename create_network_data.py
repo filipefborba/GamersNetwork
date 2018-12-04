@@ -28,8 +28,8 @@ for campeonato in campeonatos:
         for mapa in range(len(campeonatos[campeonato][partida]["maps_played"])):
             for time in campeonatos[campeonato][partida]["maps_played"][mapa]["teams"]:
                 for jogador in campeonatos[campeonato][partida]["maps_played"][mapa]["teams"][time]["players"]:
-                    played_with = [player['id'] for player in campeonatos[campeonato][partida]["maps_played"][mapa]["teams"][time]["players"]]              
-                    player_id = jogador["id"]
+                    played_with = [str(player['id']) for player in campeonatos[campeonato][partida]["maps_played"][mapa]["teams"][time]["players"]]              
+                    player_id = str(jogador["id"])
 
                     if player_id in players:
                         players[player_id]["maps_played"] += 1
