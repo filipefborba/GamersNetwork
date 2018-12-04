@@ -1,1 +1,0 @@
-{"3743748": {"team_a": {"score": 16, "players": []}, "team_b": {"score": 2, "players": []}, "duration": "29 Minutos", "map": "de_train", "type": "Competitivo", "winner": "team_a"}, "3743749": {"team_a": {"score": 16, "players": []}, "team_b": {"score": 2, "players": []}, "duration": "29 Minutos", "map": "de_train", "type": "Competitivo", "winner": "team_a"}}
