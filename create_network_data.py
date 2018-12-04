@@ -11,8 +11,10 @@ def create_player(player_id, current_team, name):
                                 "current_team": current_team,
                                 "name": name,
                                 "mean_rating" : 0,
+                                "mean_rating_campeonato" : 0,
                                 "maps_played" : 0,
                                 "ratings" : [],
+                                "ratings_campeonato": [],
                                 "teams": [],
                                 "team_mates": {},
                                 "played_with" : []
@@ -33,8 +35,7 @@ for campeonato in campeonatos:
                         players[player_id]["maps_played"] += 1
                         players[player_id]["played_with"] += played_with
                         players[player_id]["ratings"].append(jogador["rating"])
-                        players[player_id]["mean_rating"] = np.mean(players[player_id]["ratings"])
-
+                        players[player_id]["ratings_campeonato"].append((campeonato, jogador["rating"]))
 
                         if time not in players[player_id]["teams"]:
                             players[player_id]["teams"].append(time)
@@ -44,13 +45,25 @@ for campeonato in campeonatos:
                         novo_jogador = create_player(player_id, time, jogador["name"])
                         novo_jogador[player_id]["maps_played"] += 1
                         novo_jogador[player_id]["ratings"].append(jogador["rating"])
+                        novo_jogador[player_id]["ratings_campeonato"].append((campeonato, jogador["rating"]))
                         novo_jogador[player_id]["teams"].append(time)
                         novo_jogador[player_id]["played_with"] += played_with
                         novo_jogador[player_id]["team_mates"] = Counter([x for x in novo_jogador[player_id]["played_with"] if x != player_id])
                         
                         players.update(novo_jogador)
 
-
+for p in players:
+    players[p]["mean_rating"] = np.mean(players[p]["ratings"])
+    camp_ratings = {}
+    count = Counter([tup[0] for tup in players[p]["ratings_campeonato"]])
+    for tup in players[p]["ratings_campeonato"]:
+        if tup[0] not in camp_ratings:
+            camp_ratings[tup[0]] = tup[1]
+        else:
+            camp_ratings[tup[0]] += tup[1]
+    for camp in camp_ratings:
+        camp_ratings[camp] = camp_ratings[camp]/count[camp]
+    players[p]["mean_rating_campeonato"] = camp_ratings
 
 with open('network_cleaned_data.json', 'w') as fp:
     json.dump(players, fp)
